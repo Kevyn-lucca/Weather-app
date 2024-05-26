@@ -19,6 +19,7 @@ form > input {
   border: none;
   background-color: whitesmoke;
   padding: 7px;
+  outline: none;
 }
 
 .grid {
