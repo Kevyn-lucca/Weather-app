@@ -1,0 +1,59 @@
+label {
+  display: none;
+}
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 21rem 1fr;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1;
+  height: 100vh;
+  gap: 10px;
+  background-color: whitesmoke;
+}
+
+#Temperature {
+  margin-bottom: 0px;
+}
+
+.left-section-border {
+  border-bottom: 1px black solid;
+  text-align: center;
+}
+
+span {
+  font-weight: lighter;
+  color: gray;
+  font-size: 10px;
+}
+
+.temp-grid {
+  display: grid;
+
+  grid: repeat(3, 5rem);
+  gap: 6rem;
+  place-content: center;
+}
+
+.temp-iten-row1 {
+  grid-row: 2/2;
+}
+.temp-iten-row2 {
+  grid-row: 3/3;
+}
+
+.iten-style {
+  background-color: blue;
+  width: 10rem;
+  height: 6rem;
+  text-align: center;
+}
