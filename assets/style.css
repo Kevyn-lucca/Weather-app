@@ -6,6 +6,21 @@ form {
   flex-direction: row;
 }
 
+form > img {
+  margin-right: 7px;
+  margin-top: 7px;
+}
+
+form > input {
+  height: 1rem;
+  margin-top: 10px;
+  width: 280px;
+  border-radius: 6px;
+  border: none;
+  background-color: whitesmoke;
+  padding: 7px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 21rem 1fr;
@@ -16,9 +31,7 @@ form {
   flex-direction: column;
   align-items: center;
   grid-column: 1;
-  height: 100vh;
-  gap: 10px;
-  background-color: whitesmoke;
+  gap: 2rem;
 }
 
 #Temperature {
@@ -38,10 +51,11 @@ span {
 
 .temp-grid {
   display: grid;
-
   grid: repeat(3, 5rem);
-  gap: 6rem;
+  gap: 2rem;
+  height: 100vh;
   place-content: center;
+  background-color: #efefef;
 }
 
 .temp-iten-row1 {
@@ -52,8 +66,31 @@ span {
 }
 
 .iten-style {
-  background-color: blue;
-  width: 10rem;
-  height: 6rem;
+  background-color: #748cf1;
+  width: 20rem;
+  height: 14rem;
+  border-radius: 20px;
   text-align: center;
+}
+
+.temp-grid-header {
+  grid-column: 2;
+  display: flex;
+  place-content: center;
+}
+
+.temp-grid-header > button {
+  margin-right: 2rem;
+}
+
+.temp-grid > div:nth-child(1) {
+  grid-column: 1;
+  margin-top: 2rem;
+}
+
+.temp-grid > div:nth-child(1) > button {
+  margin-right: 20px;
+  border: none;
+  background: none;
+  font-size: 2rem;
 }
