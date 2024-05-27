@@ -22,6 +22,20 @@ form > input {
   outline: none;
 }
 
+#MainImg {
+  object-fit: contain;
+  width: 10rem;
+  height: 10rem;
+}
+
+.ItemState {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.TempItens {
+  width: 8rem;
+}
 .grid {
   display: grid;
   grid-template-columns: 21rem 1fr;
@@ -32,7 +46,7 @@ form > input {
   flex-direction: column;
   align-items: center;
   grid-column: 1;
-  gap: 2rem;
+  gap: 3.5rem;
 }
 
 #Temperature {
@@ -47,7 +61,7 @@ form > input {
 span {
   font-weight: lighter;
   color: gray;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .temp-grid {
@@ -94,4 +108,9 @@ span {
   border: none;
   background: none;
   font-size: 2rem;
+}
+
+#Hour {
+  font-size: 2rem;
+  margin-top: 0px;
 }
