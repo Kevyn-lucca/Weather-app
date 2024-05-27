@@ -17,9 +17,17 @@ function PutData(WeatherData) {
   const itensImg = document.querySelectorAll(".TempItens");
   const itensTextUpper = document.querySelectorAll(".ItemState");
   const itensTextUnder = document.querySelectorAll(".UnderText");
+  const Cbtn = document.querySelector("#");
+  const Fbtn = document.querySelector("#");
+
+  Cbtn.addEventListener("click", () => {
+    console.log("Cfunciona");
+  });
+
+  Cbtn.addEventListener("click", () => {});
 
   MainImg.src = WeatherData.current.condition.icon;
-  MainTxt.textContent = WeatherData.current.feelslike_c + "°c";
+  MainTxt.textContent = WeatherData.current.feelslike_c + "° c";
   UnderMain.textContent = WeatherData.current.condition.text;
   Maindate.textContent = WeatherData.current.last_updated.slice(2, -5);
   MainHour.textContent = WeatherData.current.last_updated.slice(-5);
@@ -30,7 +38,7 @@ function PutData(WeatherData) {
     itensTextUpper[i].textContent =
       "Day " + WeatherData.forecast.forecastday[i].date.slice(8);
     itensTextUnder[i].textContent =
-      WeatherData.forecast.forecastday[i].day.avgtemp_c;
+      WeatherData.forecast.forecastday[i].day.avgtemp_c + "° c";
   }
 
   /*itensImg.forEach((iten, index) => {
