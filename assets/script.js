@@ -17,14 +17,16 @@ function PutData(WeatherData) {
   const itensImg = document.querySelectorAll(".TempItens");
   const itensTextUpper = document.querySelectorAll(".ItemState");
   const itensTextUnder = document.querySelectorAll(".UnderText");
-  const Cbtn = document.querySelector("#");
-  const Fbtn = document.querySelector("#");
+  const Cbtn = document.querySelector("#CelsiusButton");
+  const Fbtn = document.querySelector("#FarenheitButton");
 
   Cbtn.addEventListener("click", () => {
     console.log("Cfunciona");
   });
 
-  Cbtn.addEventListener("click", () => {});
+  Fbtn.addEventListener("click", () => {
+    console.log("Ffunciona");
+  });
 
   MainImg.src = WeatherData.current.condition.icon;
   MainTxt.textContent = WeatherData.current.feelslike_c + "° c";
